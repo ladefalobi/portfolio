@@ -860,7 +860,7 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
     <p>Open to full-time or contract roles in product marketing, growth, lifecycle, or general management at B2B SaaS companies. Remote, global.</p>
     <div class="contact-ctas">
       <a class="btn btn-primary" href="https://cal.com/lade-falobi/30-min-chat" target="_blank">Book a Call</a>
-      <a class="btn btn-secondary" href="mailto:ladefalobi@gmail.com">Send an Email</a>
+      <a class="btn btn-secondary" href="mailto:ladefalobi@gmail.com">Say Hello ✉</a>
     </div>
     <div class="contact-links">
       <a href="https://www.linkedin.com/in/ladefalobi" target="_blank">LinkedIn ↗</a>
@@ -874,7 +874,7 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
 <footer>
   <div class="footer-left">
     Lade Falobi · Product Marketing Manager · Ibadan, Nigeria ·
-    <a href="mailto:ladefalobi@gmail.com">ladefalobi@gmail.com</a>
+    <a href="mailto:ladefalobi@gmail.com">Say hello ✉</a>
   </div>
   <div class="footer-right">
     <a href="https://drive.google.com/file/d/1-ew2em9TgmFmb9_cyPSe0GW0gQwyakit/view?usp=sharing" target="_blank">Resume ↗</a>
@@ -933,7 +933,34 @@ const btt = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
   btt.classList.toggle('visible', window.scrollY > 400);
 });
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.img-slot img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+lightbox.addEventListener('click', closeLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image fullscreen view">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
 
 </body>
 </html>
