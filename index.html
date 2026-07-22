@@ -62,6 +62,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <!-- Primary SEO -->
 <title>Lade Falobi | Product Marketing Manager</title>
 <meta name="description" content="Lade Falobi is a Product Marketing Manager with 7+ years driving positioning, GTM strategy, and product-led growth across B2B SaaS companies in Africa and globally.">
@@ -123,7 +124,7 @@
   --pink-mid: #F7C5CB;
   --bg: #FDF6F3;
   --ink: #1A1A1A;
-  --ink-soft: #3D3D3D;
+  --ink-soft: #2D2D2D;
   --ink-muted: #666666;
   --white: #FFFFFF;
   --dark: #1A1A1A;
@@ -145,6 +146,12 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 .nav-links a:hover { color: var(--pink); }
 .nav-cta { background: var(--pink) !important; color: var(--ink) !important; padding: 6px 18px !important; border-radius: 4px; border: 2px solid var(--ink) !important; font-weight: 700 !important; box-shadow: 3px 3px 0 var(--ink); }
 .nav-cta:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink); }
+.nav-burger { display: none; background: none; border: 2px solid var(--ink); border-radius: 4px; padding: 6px 10px; cursor: pointer; font-size: 18px; line-height: 1; color: var(--ink); }
+.nav-drawer { display: none; position: fixed; top: 57px; left: 0; right: 0; background: var(--bg); border-bottom: 2px dashed var(--pink); z-index: 199; flex-direction: column; padding: 16px 24px 24px; gap: 14px; }
+.nav-drawer.open { display: flex; }
+.nav-drawer a { font-family: 'Caveat', cursive; font-size: 20px; color: var(--ink-soft); text-decoration: none; padding: 6px 0; border-bottom: 1px dashed var(--pink-mid); }
+.nav-drawer a:last-child { border-bottom: none; }
+.nav-drawer .nav-cta { text-align: center; border-bottom: none !important; }
 
 /* BUTTONS */
 .btn { font-family: 'Caveat', cursive; font-size: 18px; font-weight: 600; padding: 11px 26px; border-radius: 4px; text-decoration: none; border: 2px solid var(--ink); display: inline-block; transition: transform .15s, box-shadow .15s; }
@@ -155,7 +162,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 
 /* HERO */
 #hero { max-width: 1080px; margin: 0 auto; padding: 120px 48px 72px; display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; }
-.hero-name { font-family: 'Caveat', cursive; font-size: clamp(52px, 7vw, 88px); font-weight: 700; line-height: 1; color: var(--ink); margin-bottom: 8px; white-space: nowrap; }
+.hero-name { font-family: 'Caveat', cursive; font-size: clamp(44px, 7vw, 88px); font-weight: 700; line-height: 1; color: var(--ink); margin-bottom: 8px; }
 .hero-name .hl { background: var(--pink-light); padding: 2px 10px; border-radius: 4px; }
 .hero-role { font-family: 'Caveat', cursive; font-size: clamp(18px, 2.2vw, 24px); color: var(--ink-muted); margin-bottom: 16px; }
 .hero-statement { font-size: 15px; color: var(--ink-soft); line-height: 1.7; max-width: 460px; margin-bottom: 28px; }
@@ -199,13 +206,13 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 .case-card.open .case-body { display: block; }
 .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
 .story-block h4 { font-family: 'Caveat', cursive; font-size: 15px; font-weight: 700; color: var(--ink-muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; margin-top: 18px; }
-.story-block p { font-size: 14px; color: var(--ink-soft); margin-bottom: 8px; line-height: 1.6; }
+.story-block p { font-size: 15px; color: var(--ink-soft); margin-bottom: 8px; line-height: 1.7; }
 .outcomes-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 18px; }
 .outcome-pill { background: var(--pink-light); border: 1.5px solid var(--pink); border-radius: 4px; padding: 12px 14px; }
 .outcome-pill .num { font-family: 'Caveat', cursive; font-size: 24px; font-weight: 700; color: var(--ink); line-height: 1; }
-.outcome-pill .lbl { font-size: 11px; color: var(--ink-soft); margin-top: 2px; line-height: 1.4; }
+.outcome-pill .lbl { font-size: 12px; color: var(--ink-soft); margin-top: 2px; line-height: 1.4; }
 .case-images-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 18px; }
-.img-slot { border: 2px dashed var(--pink-mid); border-radius: 4px; height: 180px; background: var(--bg); overflow: hidden; display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; }
+.img-slot { border: 2px dashed var(--pink-mid); border-radius: 4px; aspect-ratio: 16/9; background: var(--bg); overflow: hidden; display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; }
 .img-slot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .2s; }
 .img-slot:hover img { transform: scale(1.03); }
 .img-slot-label { font-family: 'Caveat', cursive; font-size: 12px; color: var(--ink-muted); text-align: center; padding: 12px; }
@@ -213,7 +220,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 /* LIGHTBOX */
 .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 500; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out; }
 .lightbox.open { display: flex; }
-.lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 4px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+.lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 4px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); cursor: default; }
 .lightbox-close { position: absolute; top: 20px; right: 24px; font-family: 'Caveat', cursive; font-size: 32px; color: var(--white); cursor: pointer; line-height: 1; background: none; border: none; }
 .case-link { display: inline-block; margin-top: 14px; font-family: 'Caveat', cursive; font-size: 14px; color: var(--ink-muted); text-decoration: underline; }
 .case-link:hover { color: var(--ink); }
@@ -225,7 +232,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 .about-pillar { border: 2px solid var(--ink); border-radius: 4px; padding: 20px; background: var(--bg); box-shadow: var(--shadow); }
 .about-pillar-icon { font-size: 24px; margin-bottom: 10px; }
 .about-pillar h3 { font-family: 'Caveat', cursive; font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
-.about-pillar p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+.about-pillar p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
 .about-fig { display: block; width: 120px; margin: 32px auto 0; }
 
 /* TIMELINE */
@@ -268,7 +275,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 .proj-card { background: var(--white); border: 2px solid var(--ink); border-radius: 4px; padding: 24px; position: relative; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
 .proj-card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow-hover); }
 .proj-card h3 { font-family: 'Caveat', cursive; font-size: 24px; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
-.proj-card p { font-size: 14px; color: var(--ink-soft); margin-bottom: 14px; line-height: 1.6; }
+.proj-card p { font-size: 15px; color: var(--ink-soft); margin-bottom: 14px; line-height: 1.7; }
 .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
 .pill { font-family: 'Caveat', cursive; font-size: 12px; font-weight: 600; background: var(--pink-light); border: 1.5px solid var(--pink); padding: 3px 10px; border-radius: 20px; color: var(--ink); }
 .proj-fig { position: absolute; bottom: 12px; right: 12px; width: 60px; }
@@ -286,7 +293,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 .press-strip-inner { max-width: 1080px; margin: 0 auto; padding: 32px 48px; }
 .press-strip-label { font-family: 'Caveat', cursive; font-size: 13px; color: var(--ink-muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; text-align: center; }
 .press-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.press-link { font-family: 'Caveat', cursive; font-size: 15px; color: var(--ink-soft); text-decoration: none; padding: 6px 14px; border: 1.5px solid var(--ink-muted); border-radius: 20px; transition: background .15s, border-color .15s; }
+.press-link { font-family: 'Caveat', cursive; font-size: 14px; color: var(--ink-soft); text-decoration: none; padding: 5px 12px; border: 1.5px solid var(--ink-muted); border-radius: 20px; transition: background .15s, border-color .15s; white-space: nowrap; }
 .press-link:hover { background: var(--pink-light); border-color: var(--pink); color: var(--ink); }
 
 /* WRITING */
@@ -300,14 +307,11 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 /* CONTACT */
 #contact { text-align: center; }
 #contact p { color: var(--ink-soft); font-size: 15px; max-width: 460px; margin: 0 auto 28px; }
-.contact-ctas { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
-.contact-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.contact-links a { font-family: 'Caveat', cursive; font-size: 16px; color: var(--ink-muted); text-decoration: none; }
-.contact-links a:hover { color: var(--pink); }
+.contact-ctas { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 .contact-fig { width: 160px; margin: 0 auto 24px; display: block; }
 
 /* FOOTER */
-footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: gap; gap: 12px; font-family: 'Caveat', cursive; font-size: 14px; }
+footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'Caveat', cursive; font-size: 14px; }
 .footer-left { }
 .footer-left a { color: #aaa; text-decoration: none; }
 .footer-left a:hover { color: var(--pink); }
@@ -316,26 +320,34 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
 .footer-right a:hover { color: var(--pink); }
 
 /* BACK TO TOP */
-#back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--pink); border: 2px solid var(--ink); border-radius: 50%; box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer; z-index: 100; opacity: 0; pointer-events: none; transition: opacity .3s, transform .15s, box-shadow .15s; text-decoration: none; }
+#back-to-top { position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px; background: var(--pink); border: 2px solid var(--ink); border-radius: 50%; box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer; z-index: 100; opacity: 0; pointer-events: none; transition: opacity .3s, transform .15s, box-shadow .15s; text-decoration: none; color: var(--ink); }
 #back-to-top.visible { opacity: 1; pointer-events: all; }
 #back-to-top:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow-hover); }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav { padding: 12px 20px; }
-  .nav-links { gap: 12px; }
-  #hero { grid-template-columns: 1fr; padding: 96px 24px 56px; gap: 28px; }
-  .hero-name { white-space: normal; }
-  .hero-photo { width: 160px; height: 160px; }
+  .nav-links { display: none; }
+  .nav-burger { display: block; }
+  #hero { grid-template-columns: 1fr; grid-template-rows: auto auto; padding: 80px 20px 48px; gap: 20px; }
+  .hero-right { order: -1; padding-bottom: 0; padding-right: 0; align-items: flex-start; }
+  .hero-photo { width: 180px; height: 180px; }
   .hero-float { display: none; }
-  .section-wrap { padding: 56px 24px; }
+  .hero-name { font-size: clamp(40px, 11vw, 60px); }
+  .hero-statement { font-size: 14px; }
+  .section-wrap { padding: 44px 20px; }
   .about-pillars { grid-template-columns: 1fr; }
   .story-grid { grid-template-columns: 1fr; }
   .proj-grid { grid-template-columns: 1fr; }
   .case-images-grid { grid-template-columns: 1fr 1fr; }
   .outcomes-row { grid-template-columns: 1fr 1fr; }
-  footer { flex-direction: column; text-align: center; padding: 24px; }
-  .press-strip-inner { padding: 24px; }
+  .press-links { gap: 6px; }
+  .press-link { font-size: 13px; padding: 4px 10px; }
+  .press-strip-inner { padding: 20px; }
+  .timeline-company-name { display: flex; flex-direction: column; gap: 2px; }
+  .case-header { padding: 16px 16px 12px; }
+  .case-body { padding: 0 16px 18px; }
+  footer { flex-direction: column; text-align: center; padding: 20px; }
 }
 </style>
 </head>
@@ -344,14 +356,25 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#hero">Lade Falobi</a>
-  <div class="nav-links">
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#writing">Writing</a>
-    <a href="https://drive.google.com/file/d/1-ew2em9TgmFmb9_cyPSe0GW0gQwyakit/view?usp=sharing" target="_blank">Resume ↗</a>
-    <a href="https://cal.com/lade-falobi/30-min-chat" target="_blank" class="nav-cta">Book a Call</a>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#writing">Writing</a>
+      <a href="https://drive.google.com/file/d/1-ew2em9TgmFmb9_cyPSe0GW0gQwyakit/view?usp=sharing" target="_blank">Resume ↗</a>
+      <a href="https://cal.com/lade-falobi/30-min-chat" target="_blank" class="nav-cta">Book a Call</a>
+    </div>
+    <button class="nav-burger" onclick="toggleDrawer()" aria-label="Menu">☰</button>
   </div>
 </nav>
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#work" onclick="closeDrawer()">Work</a>
+  <a href="#about" onclick="closeDrawer()">About</a>
+  <a href="#writing" onclick="closeDrawer()">Writing</a>
+  <a href="https://drive.google.com/file/d/1-ew2em9TgmFmb9_cyPSe0GW0gQwyakit/view?usp=sharing" target="_blank" onclick="closeDrawer()">Resume ↗</a>
+  <a href="https://cal.com/lade-falobi/30-min-chat" target="_blank" class="nav-cta" onclick="closeDrawer()">Book a Call</a>
+</div>
 
 <!-- HERO -->
 <div id="hero">
@@ -920,11 +943,6 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
       <a class="btn btn-primary" href="https://cal.com/lade-falobi/30-min-chat" target="_blank">Book a Call</a>
       <a class="btn btn-secondary" href="mailto:ladefalobi@gmail.com">Say Hello ✉</a>
     </div>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/ladefalobi" target="_blank">LinkedIn ↗</a>
-      <a href="https://twitter.com/ladefalobi" target="_blank">Twitter / X ↗</a>
-      <a href="https://www.instagram.com/ladefalobi" target="_blank">Instagram ↗</a>
-    </div>
   </div>
 </section>
 
@@ -992,17 +1010,19 @@ window.addEventListener('scroll', () => {
   btt.classList.toggle('visible', window.scrollY > 400);
 });
 
-// Lightbox
+// Lightbox - event delegation so it works on images inside collapsed case studies
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 
-document.querySelectorAll('.img-slot img').forEach(img => {
-  img.addEventListener('click', () => {
+document.addEventListener('click', function(e) {
+  const img = e.target.closest('.img-slot img');
+  if (img) {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
-  });
+    e.stopPropagation();
+  }
 });
 
 function closeLightbox() {
@@ -1010,8 +1030,26 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 
-lightbox.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', function(e) {
+  if (e.target === lightbox || e.target === lightboxImg) closeLightbox();
+});
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// Burger menu
+function toggleDrawer() {
+  document.getElementById('nav-drawer').classList.toggle('open');
+}
+function closeDrawer() {
+  document.getElementById('nav-drawer').classList.remove('open');
+}
+// Close drawer when clicking outside
+document.addEventListener('click', function(e) {
+  const drawer = document.getElementById('nav-drawer');
+  const burger = document.querySelector('.nav-burger');
+  if (drawer && !drawer.contains(e.target) && burger && !burger.contains(e.target)) {
+    drawer.classList.remove('open');
+  }
+});
 </script>
 
 <!-- LIGHTBOX -->
