@@ -1,6 +1,6 @@
 # Lade Falobi — Product Marketing Portfolio
 
-Live site: [ladefalobi.netlify.app](https://ladefalobi.netlify.app)
+Live site: [portfolio.ladefalobi.com](https://portfolio.ladefalobi.com/)
 
 ---
 
