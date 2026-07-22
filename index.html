@@ -62,7 +62,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <!-- Primary SEO -->
 <title>Lade Falobi | Product Marketing Manager</title>
 <meta name="description" content="Lade Falobi is a Product Marketing Manager with 7+ years driving positioning, GTM strategy, and product-led growth across B2B SaaS companies in Africa and globally.">
@@ -212,16 +211,11 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 12px 48
 .outcome-pill .num { font-family: 'Caveat', cursive; font-size: 24px; font-weight: 700; color: var(--ink); line-height: 1; }
 .outcome-pill .lbl { font-size: 12px; color: var(--ink-soft); margin-top: 2px; line-height: 1.4; }
 .case-images-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 18px; }
-.img-slot { border: 2px dashed var(--pink-mid); border-radius: 4px; aspect-ratio: 16/9; background: var(--bg); overflow: hidden; display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; }
-.img-slot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .2s; }
-.img-slot:hover img { transform: scale(1.03); }
+.img-slot { border: 2px solid var(--pink-mid); border-radius: 4px; background: var(--bg); overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; }
+.img-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .img-slot-label { font-family: 'Caveat', cursive; font-size: 12px; color: var(--ink-muted); text-align: center; padding: 12px; }
 
-/* LIGHTBOX */
-.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 500; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out; }
-.lightbox.open { display: flex; }
-.lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 4px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); cursor: default; }
-.lightbox-close { position: absolute; top: 20px; right: 24px; font-family: 'Caveat', cursive; font-size: 32px; color: var(--white); cursor: pointer; line-height: 1; background: none; border: none; }
+
 .case-link { display: inline-block; margin-top: 14px; font-family: 'Caveat', cursive; font-size: 14px; color: var(--ink-muted); text-decoration: underline; }
 .case-link:hover { color: var(--ink); }
 .case-fig { width: 100px; margin-top: 14px; display: block; margin-left: auto; }
@@ -472,9 +466,9 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
             <div class="outcome-pill"><div class="num">27K</div><div class="lbl">Monthly search impressions at 2% CTR</div></div>
           </div>
           <div class="case-images-grid">
-            <div class="img-slot"><img src="mb-rebrand.png" alt="Motherboard rebrand" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-            <div class="img-slot"><img src="mb-serp.jpg" alt="Motherboard SERP" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-            <div class="img-slot"><img src="mb-analytics.png" alt="Motherboard analytics" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:512/297"><img src="mb-rebrand.png" alt="Motherboard rebrand" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:3234/2206"><img src="mb-serp.jpg" alt="Motherboard SERP" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:350/512"><img src="mb-analytics.png" alt="Motherboard analytics" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
           </div>
           <img src="fig-motherboard.png" alt="" aria-hidden="true" class="case-fig" loading="lazy">
         </div>
@@ -509,9 +503,9 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
             <div class="outcome-pill"><div class="num">1.8M</div><div class="lbl">Impressions within 5 days of campaign</div></div>
           </div>
           <div class="case-images-grid">
-            <div class="img-slot"><img src="disha-event.png" alt="Disha event" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-            <div class="img-slot"><img src="disha-stats.jpg" alt="Disha stats" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-            <div class="img-slot"><img src="disha-persona.jpg" alt="Disha persona" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:512/236"><img src="disha-event.png" alt="Disha event" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:960/413"><img src="disha-stats.jpg" alt="Disha stats" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:423/512"><img src="disha-persona.jpg" alt="Disha persona" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
           </div>
           <img src="fig-disha.png" alt="" aria-hidden="true" class="case-fig" loading="lazy">
         </div>
@@ -565,8 +559,8 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
             </div>
           </div>
           <div class="case-images-grid" style="margin-top:16px;">
-            <div class="img-slot"><img src="rivva-site.png" alt="rivva website" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-            <div class="img-slot"><img src="rivva-ai-stats.jpg" alt="rivva AI stats" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:512/263"><img src="rivva-site.png" alt="rivva website" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:4/3"><img src="rivva-ai-stats.jpg" alt="rivva AI stats" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
           </div>
           <img src="fig-rivva.png" alt="" aria-hidden="true" class="case-fig" loading="lazy">
         </div>
@@ -621,8 +615,8 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
             <div class="outcome-pill"><div class="num">Page 1</div><div class="lbl">Google SERP for primary keyword</div></div>
             <div class="outcome-pill"><div class="num">AI visible</div><div class="lbl">Appearing in AI assistant search results</div></div>
           </div>
-          <div class="case-images-grid" style="grid-template-columns:1fr;">
-            <div class="img-slot"><img src="crowdr-serp.jpg" alt="Crowdr SERP" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+          <div class="case-images-grid" style="grid-template-columns:1fr;max-width:400px;">
+            <div class="img-slot" style="aspect-ratio:2795/2911"><img src="crowdr-serp.jpg" alt="Crowdr SERP" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
           </div>
         </div>
       </div>
@@ -653,8 +647,8 @@ footer { background: var(--dark); color: #888; padding: 28px 48px; display: flex
             <div class="outcome-pill"><div class="num">2</div><div class="lbl">Major features shipped as GM</div></div>
           </div>
           <div class="case-images-grid">
-            <div class="img-slot"><img src="sk-website.png" alt="SocialKit website" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-            <div class="img-slot"><img src="sk-product.gif" alt="SocialKit product" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:512/245"><img src="sk-website.png" alt="SocialKit website" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
+            <div class="img-slot" style="aspect-ratio:800/383"><img src="sk-product.gif" alt="SocialKit product" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
           </div>
         </div>
       </div>
@@ -1010,30 +1004,7 @@ window.addEventListener('scroll', () => {
   btt.classList.toggle('visible', window.scrollY > 400);
 });
 
-// Lightbox - event delegation so it works on images inside collapsed case studies
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
 
-document.addEventListener('click', function(e) {
-  const img = e.target.closest('.img-slot img');
-  if (img) {
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-    lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    e.stopPropagation();
-  }
-});
-
-function closeLightbox() {
-  lightbox.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-lightbox.addEventListener('click', function(e) {
-  if (e.target === lightbox || e.target === lightboxImg) closeLightbox();
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
 // Burger menu
 function toggleDrawer() {
@@ -1052,11 +1023,7 @@ document.addEventListener('click', function(e) {
 });
 </script>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image fullscreen view">
-  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
+
 
 </body>
 </html>
